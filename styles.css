@@ -13,7 +13,7 @@
     --border: #2a2a2a;
     
     /* Editable stroke settings */
-    --stroke-width: 3px;
+    --stroke-width: 0.5px;
     --stroke-color: #d4a853;
 }
 
@@ -114,7 +114,10 @@ nav {
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--border);
+    border: 0.5px solid var(--border);
+    border: var(--stroke-width) solid var(--stroke-color);
+    border-radius: 4px;
+
 }
 
 .product-card:hover {
@@ -141,8 +144,6 @@ nav {
     height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
-    border: var(--stroke-width) solid var(--stroke-color);
-    border-radius: 4px;
 }
 
 .product-card:hover .product-image img {
